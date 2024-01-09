@@ -18,11 +18,12 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-from">
+        <form class="search-from" id="search-from">
           <input
             type=" search"
             placeholder="Enter a city.."
             required
+            id="search-from-input"
             class="search-from-input"
           />
           <input type="submit" value="Search" class="search-from-button" />
@@ -31,7 +32,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Paris</h1>
+            <h1 class="weather-app-city" id="city">Paris</h1>
             <p class="weather-app-details">
               Tuesday 14:49, scattered clouds
               <br />
@@ -58,5 +59,6 @@
         <a href="https://spookymeteo.netlify.app/" target="_blank">Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
